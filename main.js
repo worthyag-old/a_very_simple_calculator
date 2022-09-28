@@ -27,7 +27,6 @@ for (let i = 0; i < btn.length; i++) {
 
         if (btn[i].innerText === "%") {
             showCalc += '*0.01'
-            // console.log(math.eval('50%'))
         }
 
         display.innerText = showCalc;
