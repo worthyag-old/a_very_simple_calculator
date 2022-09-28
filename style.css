@@ -1,0 +1,85 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title {
+    color: rgb(72, 118, 193);
+    text-align: center;
+}
+
+#calculator, #output {
+    width: 80%;
+    padding: 16px;
+    margin: 0 auto;
+    background-color: rgb(76, 175, 233);
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    border: 4px solid rgb(54, 135, 182);
+}
+
+#output {
+    font-size: 22px;
+    color: #fff;
+    background-color: rgb(77, 82, 87);
+    border: 4px solid rgb(44, 47, 50);
+    font-weight: 600;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "top"
+                         "bottom";
+}
+
+.previous-operand {
+    grid-area: "bottom";
+    /* background-color: rgb(139, 57, 216); */
+    text-align: left;
+    padding-left: 16px;
+}
+
+.current-operand {
+    grid-area: "top";
+    /* background-color: rgb(167, 73, 73); */
+    text-align: right;
+    padding-right: 16px;
+}
+
+.btn {
+    padding: 16px;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.number {
+    color: #fff;
+    background-color: rgb(166, 120, 192);
+    border: solid 2px rgb(119, 85, 138);
+}
+
+.number:hover {
+    background-color: rgb(119, 85, 138);
+}
+
+.operation {
+    color: #fff;
+    background-color: rgb(120, 192, 157);
+    border: solid 2px rgb(86, 140, 114);
+}
+
+.operation:hover {
+    background-color: rgb(86, 140, 114);
+}
+
+.equals, .all-clear {
+    color: #fff;
+    background-color: rgb(222, 170, 139);
+    border: solid 2px rgb(141, 107, 87);
+}
+
+.equals:hover, .all-clear:hover {
+    background-color: rgb(141, 107, 87);
+}
